@@ -9,6 +9,7 @@ const refs = {
   loader: document.querySelector('.loader'),
   searchMore: document.querySelector('.search-more'),
 };
+
 const params = {
   key: '42208062-89bae71b6ac9d6683cff7159b',
   q: '',
@@ -54,6 +55,7 @@ async function onFormSubmit(e) {
   }
   refs.form.reset();
 }
+
 async function onGetImageByPage(e) {
   params.page += 1;
 
