@@ -10,7 +10,7 @@ const refs = {
   searchMore: document.querySelector('.search-more'),
 };
 const params = {
-  key: '42141224-180b0a56c10fd436e302d680a',
+  key: '42208062-89bae71b6ac9d6683cff7159b',
   q: '',
   image_type: 'photo',
   orientation: 'horizontal',
@@ -26,7 +26,7 @@ refs.searchMore.addEventListener('click', onGetImageByPage);
 
 async function onFormSubmit(e) {
   e.preventDefault();
-  params.q = e.target.elements.search.value;
+  params.q = e.target.elements.input.value;
   params.page = 1;
   refs.gallery.innerHTML = '';
   refs.searchMore.classList.add('hidden');
